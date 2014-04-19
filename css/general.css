@@ -77,7 +77,6 @@ h1 {
 .nav-top a:link,
 .nav-top a:visited {
     display: inline-block;
-    margin; 0px; 
     padding: 1.5rem 10%;
     color: black; 
     font-size: 1.25rem;
@@ -136,22 +135,28 @@ h4 {
     background-color: rgba(0, 0, 0, .6);
 }
 
-
-.bucket1 {
+.bucket1 { 
     overflow:  hidden;
     margin-top: 2rem;
-    
 }
 
 .bucket1 figure {
     float: left;
-    width: 45%; 
+    width: 100%; 
     margin: 0 10% 1.5rem 0; 
     padding: 0;
 }
 
+.bucket1 a,
+.bucket1 a:link,
+.bucket1 a:visited {
+    float: left;
+    width: 45%; /* First and second buckets. 45% x 2 = 90% */ 
+    margin: 0 10% 1.5rem 0; /* First and second bucket right margins. 10% x 2 = 20%  */
+    padding: 0;
+}
 
-.bucket1 figure:nth-child(even) {
+.bucket1 a:nth-child(even){
     margin: 0;     
 }
 
@@ -174,7 +179,6 @@ h4 {
 }
 
 .products figure {
-    float: center;
     width: 100%; /* First and second buckets. 45% x 2 = 90% */ 
     margin: 1.5rem 10% 1.5rem 0; 
     padding: 0;
@@ -198,7 +202,6 @@ h4 {
 }
 
 .company figure {
-    float: center;
     width: 100%; /* First and second buckets. 45% x 2 = 90% */ 
     margin: 1.5rem 10% 1.5rem 0; 
     padding: 0;
