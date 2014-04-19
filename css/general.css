@@ -175,7 +175,6 @@ h4 {
 .products {
     overflow:  hidden;
     margin-top: 2rem;
-    
 }
 
 .products figure {
@@ -202,7 +201,7 @@ h4 {
 }
 
 .company figure {
-    width: 100%; /* First and second buckets. 45% x 2 = 90% */ 
+    width: 100%; 
     margin: 1.5rem 10% 1.5rem 0; 
     padding: 0;
 }
