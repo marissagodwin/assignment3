@@ -31,14 +31,27 @@ body {
 }
 
 header {
-    background-color: red;
+    background-color: white;
+    font-family: 'Domine', serif;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 2.5rem;
 }
 
 .logo {
     width: 4.5rem;
     height: auto;
-    float: left;
-    margin: 1.5rem 5%;   
+    margin: 1.5rem auto;
+}
+
+hr {
+    border: solid .10rem black;
+}
+
+h1 {
+    margin: -1rem 0 1.5rem;
+    padding: 0;
+    font-size: 2rem;
 }
 
 .nav-top {
@@ -48,74 +61,232 @@ header {
 .nav-top ul {
     margin: 0;
     padding: 0;
-    background-color: black;
     text-align: center;
 }
 
 .nav-top li {
-    margin: 0;
+    margin: -1rem;
     padding: 0;
     display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .nav-top a, 
 .nav-top a:link,
 .nav-top a:visited {
     display: inline-block;
-    margin; 0; /* -2px for no space between */
+    margin; 0px; 
     padding: 1.5rem 10%;
-    color: white; 
+    color: black; 
     font-size: 1.25rem;
     text-decoration: none;
-    /* background-color: grey; */
 }
 
-.selected {
-    background-color: #666;
+.billboard {
+    padding: .5rem 0 .5rem 0;
+    border: .15rem solid black;
+    background-image:url(../images/graffiti.jpg); 
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 2rem;
+}
+
+.billboard ul {
+    list-style-type: none;
+}
+
+.billboard li:last-child {
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.billboard2 {
+    border: .15rem solid black;
+    background-image:url(../images/fish.jpg); 
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+.billboard2 ul {
+    list-style-type: none;
+    text-align: center
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+h4 {
+    padding: 1rem 0 1rem 0;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+
+.bucket1 {
+    overflow:  hidden;
+    margin-top: 2rem;
+    
+}
+
+.bucket1 figure {
+    float: left;
+    width: 45%; 
+    margin: 0 10% 1.5rem 0; 
+    padding: 0;
+}
+
+
+.bucket1 figure:nth-child(even) {
+    margin: 0;     
+}
+
+.bucket1 figcaption {
+    background-color:  rgba(255, 255, 255, .4);
+    color: black;
+    margin: -4rem 0 0 0;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 40.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.products {
+    overflow:  hidden;
+    margin-top: 2rem;
+    
+}
+
+.products figure {
+    float: center;
+    width: 100%; /* First and second buckets. 45% x 2 = 90% */ 
+    margin: 1.5rem 10% 1.5rem 0; 
+    padding: 0;
+}
+
+.products figcaption {
+    background-color:  rgba(255, 255, 255, .4);
+    color: black;
+    margin: -4rem 0 0 0;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.company {
+    overflow:  hidden;
+    margin-top: 2rem;   
+}
+
+.company figure {
+    float: center;
+    width: 100%; /* First and second buckets. 45% x 2 = 90% */ 
+    margin: 1.5rem 10% 1.5rem 0; 
+    padding: 0;
+}
+
+.company figcaption {
+    background-color:  rgba(255, 255, 255, .4);
+    color: black;
+    margin: -4rem 0 0 0;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align:center;
 }
 
 article {
     margin: 0;
     padding: 1.5rem 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
 }
 
-h1 {
-    margin: 0 0 1.5rem;
+.bucket2 {
+    margin: 2rem 0 2rem;
+    padding: 0 5%;
+    overflow: hidden;
+    list-style: none;
+}
+
+.bucket2 li {
+    float: left;
+    width: 20%;
+    margin: 0 6.6666% 0 0;
     padding: 0;
-    font-size: 2rem;
-}
-    
-figure { 
-    margin: 0 auto 1.5rem;
-    width: 60%;
 }
 
-figure a,
-figure a:link,
-figure a:visited {
-    font-size: .875rem;
-    color: black;
-    text-decoration: none;
-    text-align: center;
+.bucket2 li:last-child {
+    margin-right: 0;
+}
+
+.bucket2 a {
+    display: inline;
+    background-size: 20%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 10% 0 0; /* height of image ÷ by width = % */
 }
 
 footer {
     margin: 0;
     padding: 1.5rem 5% 6rem;
-    background-color: red;
+    background-color: #2F4F4F;
 }
-    
-.nav-bottom ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-    
-.nav-bottom a,
-.nav-bottom a:link,
-.nav-bottom a:visited {
+        
+.nav-bottom,
+.nav-bottom:link,
+.nav-bottom:visited {
     color: white;
     text-decoration: none;
     font-size: .875rem;
     line-height: 1.5rem;
+}
+
+.nav-bottom ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-bottom li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.bottomlogo {
+    width: 4.5rem;
+    height: auto;
+    margin: 1.5rem auto;
 }
