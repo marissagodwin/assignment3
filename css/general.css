@@ -48,6 +48,10 @@ hr {
     border: solid .10rem black;
 }
 
+p { 
+    text-align: center   
+}
+
 h1 {
     margin: -1rem 0 1.5rem;
     padding: 0;
